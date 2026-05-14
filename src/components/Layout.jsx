@@ -5,14 +5,16 @@ import About from './About';
 import BookDetails from './BookDetails';
 import Newsletter from './Newsletter';
 import Footer from './Footer';
+import FeaturedWorks from './FeaturedWorks';
 
 const Layout = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
       <Hero />
-      <About />
       <BookDetails />
+      <FeaturedWorks/>
+      <About />
       <Newsletter />
       <Footer />
     </div>

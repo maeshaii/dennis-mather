@@ -15,8 +15,10 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="relative overflow-hidden bg-[#F5E6D3] border-t-2 border-[#F5E6D3]">
-
+    <footer
+      id="contact"
+      className="relative overflow-hidden bg-[#F5E6D3] border-t-2 border-[#F5E6D3]"
+    >
       {/* BACKGROUND */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-[#F5E6D3]"></div>
@@ -34,9 +36,7 @@ const Footer = () => {
       <div className="absolute top-1/2 left-1/3 w-32 h-32 bg-[#b8860b]/5 rounded-full blur-3xl"></div>
 
       {/* PREMIUM PAPER TEXTURE */}
-      <div className="absolute inset-0 opacity-30 bg-[radial-gradient(#b8860b_1px,transparent_1px)] [background-size:18px_18px]"></div> 
-
-
+      <div className="absolute inset-0 opacity-30 bg-[radial-gradient(#b8860b_1px,transparent_1px)] [background-size:18px_18px]"></div>
 
       {/* FLOATING ELEMENTS */}
       <div className="absolute top-10 left-5 opacity-20 animate-float-slow">
@@ -52,7 +52,6 @@ const Footer = () => {
       </div>
 
       <div className="container-custom mx-auto relative z-10 py-12">
-
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
 
           {/* AUTHOR INFO */}
@@ -71,13 +70,13 @@ const Footer = () => {
               </div>
 
               <h3 className="text-2xl font-display font-bold text-[#5c3d00] drop-shadow-lg">
-                <span className="text-[#022658]">Judy</span>{" "}
-                <span className="text-[#b8860b]">Wilson</span>
+                <span className="text-[#022658]">Dennis</span>{" "}
+                <span className="text-[#b8860b]">Mather</span>
               </h3>
             </div>
 
             <p className="text-[#8a6a2f] text-sm">
-              American Author | Memoir Writer | Oral Historian
+              Christian Author & Theologian
             </p>
 
             {/* CONTACT INFO */}
@@ -85,19 +84,16 @@ const Footer = () => {
 
               <div className="flex items-center gap-2">
                 <FaEnvelope className="text-[#b8860b]" />
-                <span>judywilson164@yahoo.com</span>
+                <span>dennismather931@yahoo.com</span>
               </div>
 
               <div className="flex items-center gap-2">
                 <FaBook className="text-[#b8860b]" />
-                <span>Triumph</span>
+                <span>Biblical Prophecy</span>
               </div>
-
 
             </div>
           </div>
-
-
 
           {/* SOCIALS */}
           <div className="flex gap-5">
@@ -111,10 +107,9 @@ const Footer = () => {
             ].map((Icon, idx) => (
               <a
                 key={idx}
-                href={idx === 4 ? `mailto:judywilson164@yahoo.com` : "#"}
+                href={idx === 4 ? `mailto:dennismather931@yahoo.com` : "#"}
                 className="relative group"
               >
-
                 <div className="absolute inset-0 bg-[#b8860b] rounded-full blur-md opacity-0 group-hover:opacity-40 transition-opacity"></div>
 
                 <div className="relative bg-gradient-to-b from-[#05070d] via-[#061a2b] to-[#0b2a4a] p-2 rounded-full shadow-lg border-2 border-[#F5E6D3] hover:scale-110 transition-all duration-300">
@@ -142,7 +137,7 @@ const Footer = () => {
                 <FaBook size={12} className="text-[#b8860b]" />
               </div>
 
-              <span>Memoir • Family History • Resilience</span>
+              <span>Scripture • Prophecy • Divine Sovereignty</span>
 
               <div className="bg-[#b8860b]/20 p-1.5 rounded-full">
                 <FaBook size={12} className="text-[#b8860b]" />
@@ -156,7 +151,7 @@ const Footer = () => {
                 <FaChild size={12} className="text-[#b8860b]" />
               </div>
 
-              <span>© 2025 Judy Wilson. All rights reserved.</span>
+              <span>© 2025 Dennis Mather. All rights reserved.</span>
 
               <div className="bg-[#b8860b]/20 p-1.5 rounded-full">
                 <FaChild size={12} className="text-[#b8860b]" />
@@ -170,7 +165,7 @@ const Footer = () => {
                 <FaStar size={10} className="text-[#b8860b]" />
               </div>
 
-              <span>Preserving Generational Stories Through Writing</span>
+              <span>Exploring Biblical Prophecy Through Writing</span>
 
               <div className="bg-[#b8860b]/20 p-1.5 rounded-full">
                 <FaStar size={10} className="text-[#b8860b]" />
@@ -203,7 +198,7 @@ const Footer = () => {
           <p className="mt-2">
             Written by{" "}
             <span className="text-[#b8860b] font-semibold">
-              Judy Wilson
+              Dennis Mather
             </span>
           </p>
 

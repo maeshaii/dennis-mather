@@ -7,6 +7,11 @@ import {
   FaBrain,
   FaHistory,
   FaFeatherAlt,
+  FaBook,
+  FaGlobe,
+  FaClock,
+  FaDove,
+   
 } from "react-icons/fa";
 
 const About = () => {
@@ -16,8 +21,9 @@ const About = () => {
       
 
       {/* PREMIUM PAPER TEXTURE */}
-      <div className="absolute inset-0 opacity-30 bg-[radial-gradient(#b8860b_1px,transparent_1px)] [background-size:18px_18px]"></div>
+      <div className="absolute inset-0 opacity-20 bg-[radial-gradient(#b8860b_1px,transparent_1px)] [background-size:18px_18px]"></div>
 
+      <div className="container mx-auto px-6 relative z-10"></div>
 
 
       <div className="container mx-auto px-6 relative z-10">
@@ -28,13 +34,12 @@ const About = () => {
             About the Author
           </div>
 
-          <h2 className="text-4xl md:text-5xl font-bold text-[##022658]">
-            Judy <span className="text-[#b8860b]">Wilson</span>
+          <h2 className="text-4xl md:text-5xl font-bold text-[#022658]">
+            Dennis <span className="text-[#b8860b]">Mather</span>
           </h2>
 
           <p className="text-[#8a6a2f] mt-3 max-w-2xl mx-auto leading-relaxed">
-            An American author preserving family history, hardship, survival,
-            and resilience through storytelling.
+            A Christian author and theologian known for his work on eschatology and biblical prophecy.
           </p>
         </div>
 
@@ -48,13 +53,12 @@ const About = () => {
               </div>
 
               <h3 className="text-2xl font-bold text-white mb-3">
-                Her Background
+                His Background
               </h3>
 
               <p className="text-[#F5E6D3]/80 leading-relaxed text-sm">
-                Judy Wilson’s story is rooted in the realities of generational
-                poverty, family mental health struggles, and socioeconomic
-                hardship in the United States.
+              Dennis Mather’s work is rooted in biblical prophecy, Christian theology, and the study of the end times, 
+              offering readers a deeper understanding of Scripture through faith-centered insight and spiritual reflection.
               </p>
             </div>
 
@@ -62,62 +66,61 @@ const About = () => {
             <div className="lg:col-span-2 p-8 space-y-6">
               <div>
                 <h4 className="text-xl font-semibold text-[#b8860b] mb-3">
-                  American Author & Family Storykeeper
+                  Christian Author & Theologian
                 </h4>
 
                 <p className="text-[#F5E6D3]/85 leading-relaxed">
-                  Judy Wilson is an American author whose life and writing were
-                  shaped by the hardships she experienced and witnessed within
-                  her family. Growing up around poverty, emotional struggles,
-                  and difficult family circumstances gave her a deep
-                  understanding of survival, pain, and resilience.
+                  Dennis Mather is a Christian author and theologian whose life and writing were
+                  shaped by his deep study of biblical prophecy and eschatology. Growing up with a strong foundation in Christian theology,
+                  he dedicated his life to exploring the complexities of end-times interpretation and providing clarity on Scripture.
                 </p>
               </div>
 
               <div>
                 <h4 className="text-xl font-semibold text-[#b8860b] mb-3">
-                  Role as an Oral Historian
+                  Published Works
                 </h4>
 
                 <p className="text-[#F5E6D3]/85 leading-relaxed">
-                  Beyond writing about her own life, she took on the role of an
-                  oral historian for her family. She documented ancestral
-                  accounts, remembered hardships, and preserved stories passed
-                  down through generations — including family history dating
-                  back to the 1800s.
+                His books often originate from his systematic theology studies and focus on the relationship 
+                between the Church, the nation of Israel, and future biblical events.
                 </p>
               </div>
 
               <div className="grid sm:grid-cols-2 gap-4 pt-2">
                 <div className="bg-white/5 rounded-xl p-4 border border-[#b8860b]/40">
-                  <FaHome className="text-[#b8860b] mb-2" />
-                  <p className="text-white font-medium">Family Hardship</p>
+                  <FaBook className="text-[#b8860b] mb-2" />
+                  <p className="text-white font-medium">Theological Compendium</p>
                   <p className="text-sm text-[#F5E6D3]/70">
-                    Poverty, struggle, and generational challenges.
+                    A multi-volume theological series exploring prophecy, Creation,
+                    Christ’s teachings, Israel, and future biblical events.
                   </p>
                 </div>
 
                 <div className="bg-white/5 rounded-xl p-4 border border-[#b8860b]/40">
-                  <FaBrain className="text-[#b8860b] mb-2" />
-                  <p className="text-white font-medium">Mental Health</p>
+                  <FaGlobe className="text-[#b8860b] mb-2" />
+                  <p className="text-white font-medium">Biblical Prophecy</p>
                   <p className="text-sm text-[#F5E6D3]/70">
-                    Family emotional pain and mental health struggles.
+                    Focused on end-time prophecy, the return of Christ, and the unfolding
+                    events described in Scripture.
                   </p>
                 </div>
 
                 <div className="bg-white/5 rounded-xl p-4 border border-[#b8860b]/40">
-                  <FaHistory className="text-[#b8860b] mb-2" />
-                  <p className="text-white font-medium">Oral History</p>
+                  <FaClock className="text-[#b8860b] mb-2" />
+                  <p className="text-white font-medium">The Last Days</p>
                   <p className="text-sm text-[#F5E6D3]/70">
-                    Preserving ancestral accounts from the 1800s.
+                    Books centered on eschatology, the Rapture, and the urgency of preparing
+                    for Christ’s return.
                   </p>
                 </div>
 
                 <div className="bg-white/5 rounded-xl p-4 border border-[#b8860b]/40">
-                  <FaPeace className="text-[#b8860b] mb-2" />
-                  <p className="text-white font-medium">Resilience</p>
+                  <FaDove className="text-[#b8860b] mb-2" />
+                  <p className="text-white font-medium">Divine Sovereignty</p>
                   <p className="text-sm text-[#F5E6D3]/70">
-                    Turning hardship into memory, healing, and strength.
+                    Encouraging readers to find peace, hope, and assurance through God’s
+                    control over world events and human history.
                   </p>
                 </div>
               </div>

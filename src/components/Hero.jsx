@@ -1,91 +1,121 @@
-import React from 'react';
+import React, { useState } from "react";
 import {
   FaArrowRight,
   FaChevronRight,
+  FaChevronLeft,
   FaStar,
   FaBook,
-} from 'react-icons/fa';
-import wowVideo from '../assets/wow.mp4';
+  FaQuoteLeft,
+  FaHeart,
+  FaComments,
+} from "react-icons/fa";
+
+import wowVideo from "../assets/wow.mp4";
+
+import worldBook from "../assets/winw1.webp";
+import compendiumBook from "../assets/mtc3.webp";
+import eschatologyBook from "../assets/eu.webp";
+import divineBook from "../assets/mtc-2.webp";
+import coverImage from "../assets/bip-pro.webp";
+
+const books = [
+  {
+    title: "What in the World Is Going to Happen",
+    subtitle: "A fictional account beginning one second after the Rapture.",
+    image: worldBook,
+  },
+  {
+    title: "Mather’s Theological Compendium III",
+    subtitle: "Focused on Israel and future biblical events.",
+    image: compendiumBook,
+  },
+  {
+    title: "Eschatology Unlimited",
+    subtitle: "Encouragement for Christians awaiting Christ’s return.",
+    image: eschatologyBook,
+  },
+  {
+    title: "The Divine Plan: Mather’s Theological Compendium II",
+    subtitle: "Exploring God’s sovereignty throughout history.",
+    image: divineBook,
+  },
+  {
+    title: "Biblical Prophecy",
+    subtitle: "A focused study of prophecy and future biblical events.",
+    image: compendiumBook,
+  },
+  {
+    title: "Mather’s Theological Compendium",
+    subtitle: "A theological work covering signs of Christ’s return.",
+    image: coverImage,
+  },
+];
 
 const Hero = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const nextSlide = () => {
+    setCurrentIndex((prev) => (prev + 1) % books.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentIndex((prev) => (prev - 1 + books.length) % books.length);
+  };
+
   return (
-    <section
-      id="home"
-      className="min-h-screen flex items-center pt-20 relative overflow-hidden bg-[#F5E6D3]"
-    >
+    <>
+      {/* ================= HERO SECTION ================= */}
+      <section
+        id="home"
+        className="min-h-screen flex items-center pt-20 relative overflow-hidden bg-[#fffafa ]"
+      >
 
-      {/* subtle texture */}
-      <div className="absolute inset-0 opacity-30 bg-[radial-gradient(#b8860b_1px,transparent_1px)] [background-size:18px_18px]"></div>      {/* Paint splash decorations */}
+        <div className="container-custom mx-auto relative z-10 px-6">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="text-center md:text-left relative">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#b8860b]/10 border border-[#b8860b]/30 rounded-full text-[#5c3d00] font-semibold text-sm mb-6">
+                <FaStar size={14} className="text-[#b8860b]" />
+                <span>Christian Author & Theologian</span>
+                <FaStar size={14} className="text-[#b8860b]" />
+              </div>
 
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                <span className="text-[#022658]">Dennis</span>{" "}
+                <span className="text-[#b8860b]">Mather</span>
 
-      <div className="container-custom mx-auto relative z-10">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+                <span className="block text-[#b8860b] text-2xl md:text-3xl mt-2">
+                  Author & Theologian
+                </span>
+              </h1>
 
-          {/* LEFT CONTENT */}
-          <div className="text-center md:text-left relative">
+              <p className="text-lg text-[#5c3d00]/80 mb-8 leading-relaxed">
+                He's a Christian author and theologian known for his work on
+                eschatology, the study of the end times, and biblical prophecy.
+                He holds a bachelor’s degree from Faith Baptist Bible College
+                and Seminary and currently resides in Des Moines, Iowa.
+              </p>
 
-            {/* TOP BADGE */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#b8860b]/10 border border-[#b8860b]/30 rounded-full text-[#5c3d00] font-semibold text-sm mb-6 relative backdrop-blur-sm">
-              <FaStar size={14} className="text-[#b8860b]" />
-              <span>American Author & Oral Historian</span>
-              <FaStar size={14} className="text-[#b8860b]" />
+              <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                <a
+                  href="#featured-works"
+                  className="px-6 py-3 rounded-xl bg-[#b8860b] text-white font-semibold flex items-center justify-center gap-2 hover:scale-105 transition-all duration-300 shadow-lg"
+                >
+                  Explore the Books
+                  <FaArrowRight size={18} />
+                </a>
+
+                <a
+                  href="#about"
+                  className="px-6 py-3 rounded-xl border border-[#b8860b] text-[#5c3d00] font-semibold flex items-center justify-center gap-2 hover:bg-[#b8860b]/10 transition-all duration-300"
+                >
+                  Learn More
+                  <FaChevronRight size={18} />
+                </a>
+              </div>
             </div>
 
-            {/* TITLE */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight relative">
-
-              <span className="text-[#022658]">Judy</span>{" "}
-              <span className="text-[#b8860b]">Wilson</span>
-
-              <span className="block text-[#b8860b] text-2xl md:text-3xl mt-2">
-                Author & Storyteller
-              </span>
-
-
-            </h1>
-
-            {/* DESCRIPTION */}
-            <p className="text-lg text-[#5c3d00]/80 mb-8 leading-relaxed relative">
-              She is an American author who grew up experiencing generational
-              poverty, family mental health struggles, and socioeconomic
-              hardships in the United States.
-              <br /><br />
-              As an oral historian for her family, she documented ancestral
-              hardships and preserved stories passed down through generations,
-              including accounts dating back to the 1800s.
-              <br /><br />
-              Her work reflects resilience, memory, healing, and the importance
-              of preserving family history through storytelling.
-
-            </p>
-
-            {/* BUTTONS */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start relative">
-
-              <a
-                href="#book"
-                className="px-6 py-3 rounded-xl bg-[#b8860b] text-white font-semibold flex items-center justify-center gap-2 hover:scale-105 transition-all duration-300 shadow-lg"
-              >
-                Explore the Book
-                <FaArrowRight size={18} />
-              </a>
-
-              <a
-                href="#about"
-                className="px-6 py-3 rounded-xl border border-[#b8860b] text-[#5c3d00] font-semibold flex items-center justify-center gap-2 hover:bg-[#b8860b]/10 transition-all duration-300"
-              >
-                Learn More
-                <FaChevronRight size={18} />
-              </a>
-
-            </div>
-          </div>
-
-          {/* RIGHT IMAGE CARD */}
-          <div className="relative flex justify-center">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl max-w-md mx-auto bg-gradient-to-br from-[#05070d] via-[#061a2b] to-[#0b2a4a] p-6 border-2 border-[#b8860b]">
-
-              <div className="relative">
+            <div className="relative flex justify-center">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl max-w-md mx-auto bg-gradient-to-br from-[#05070d] via-[#061a2b] to-[#0b2a4a] p-6 border-2 border-[#b8860b]">
                 <video
                   autoPlay
                   loop
@@ -101,78 +131,12 @@ const Hero = () => {
                   <FaBook size={24} />
                 </div>
               </div>
+            </div>
           </div>
         </div>
-        </div>
-      </div>
+      </section>
 
-      {/* ANIMATIONS */}
-      <style>{`
-        @keyframes float {
-          0%, 100% { transform: translateY(0px); }
-          50% { transform: translateY(-10px); }
-        }
-
-        @keyframes float-delayed {
-          0%, 100% { transform: translateY(0px); }
-          50% { transform: translateY(-15px); }
-        }
-
-        @keyframes paint-splash {
-          0% {
-            transform: scale(0.8) translateY(0);
-            opacity: 0;
-          }
-          50% {
-            opacity: 0.6;
-          }
-          100% {
-            transform: scale(1.3) translateY(-15px);
-            opacity: 0;
-          }
-        }
-
-        @keyframes pulse {
-          0%, 100% {
-            opacity: 0.5;
-            transform: scale(1);
-          }
-
-          50% {
-            opacity: 1;
-            transform: scale(1.1);
-          }
-        }
-
-        .animate-float {
-          animation: float 4s ease-in-out infinite;
-        }
-
-        .animate-float-delayed {
-          animation: float-delayed 5s ease-in-out infinite;
-        }
-
-        .animate-paint-splash {
-          animation: paint-splash 3s ease-in-out infinite;
-        }
-
-        .animate-pulse {
-          animation: pulse 2s ease-in-out infinite;
-        }
-
-        .animation-delay-200 {
-          animation-delay: 0.2s;
-        }
-
-        .animation-delay-300 {
-          animation-delay: 0.3s;
-        }
-
-        .animation-delay-400 {
-          animation-delay: 0.4s;
-        }
-      `}</style>
-    </section>
+    </>
   );
 };
 

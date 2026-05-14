@@ -12,39 +12,8 @@ const Newsletter = () => {
   return (
     <section
       id="reviews"
-      className="py-24 relative overflow-hidden bg-[#F5E6D3]"
+      className="py-24 relative overflow-hidden bg-[#fffafa]"
     >
-
-      {/* GOLD GLOW BACKGROUNDS */}
-      <div className="absolute inset-0 opacity-40">
-        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-96 h-96 bg-[#b8860b]/20 rounded-full blur-3xl"></div>
-
-        <div className="absolute bottom-0 right-0 w-80 h-80 bg-[#b8860b]/10 rounded-full blur-3xl"></div>
-
-        <div className="absolute top-1/2 left-0 w-64 h-64 bg-[#b8860b]/10 rounded-full blur-3xl"></div>
-      </div>
-
-      {/* PREMIUM PAPER TEXTURE */}
-      <div className="absolute inset-0 opacity-30 bg-[radial-gradient(#b8860b_1px,transparent_1px)] [background-size:18px_18px]"></div>
-
-
-
-      {/* FLOATING ELEMENTS */}
-      <div className="absolute top-20 left-10 opacity-20 animate-float-slow">
-        <FaMagic size={40} className="text-[#b8860b]" />
-      </div>
-
-      <div className="absolute bottom-20 right-10 opacity-20 animate-float-delayed">
-        <FaCrown size={35} className="text-[#b8860b]" />
-      </div>
-
-      <div className="absolute top-40 right-20 opacity-20 animate-pulse-slow">
-        <FaStar size={25} className="text-[#b8860b]" />
-      </div>
-
-      <div className="absolute bottom-40 left-20 opacity-20 animate-pulse-slow">
-        <FaStar size={20} className="text-[#b8860b]" />
-      </div>
 
       <div className="container-custom mx-auto text-center relative z-10">
 
@@ -74,20 +43,20 @@ const Newsletter = () => {
           {[
             {
               quote:
-                "Triumph by Judy Wilson is an emotional and inspiring story that explores resilience, family, and personal growth through heartfelt storytelling and memorable characters. The book’s vintage atmosphere and reflective tone create a strong emotional connection, making readers feel deeply involved in the characters’ journeys. One of the strongest aspects of the novel is its ability to balance hardship and hope, showing how perseverance and compassion can shape lives over time. The writing style feels sincere and personal, allowing the themes of faith, endurance, and human connection to stand out naturally. Overall, Triumph is a touching and meaningful read for readers who enjoy character-driven stories filled with emotion, reflection, and inspiration.",
-              name: "Robert Albert",
+                "The writings of Dennis Mather provide a reflective and intellectually engaging perspective on biblical themes and theological ideas. His ability to connect scripture with broader life questions gives his books a meaningful and thought-provoking quality. Readers may appreciate the calm, educational tone and the way the material encourages personal reflection without feeling overly academic or difficult to follow. For those interested in faith-based literature and theological exploration, Dennis Mather’s books offer a unique and inspiring reading experience.",
+              name: "Mendoza",
              
             },
             {
               quote:
-                "Judy Wilson’s Triumph is a beautifully written story that combines emotional realism with themes of courage and hope. The characters are portrayed with warmth and authenticity, allowing readers to connect deeply with their experiences and personal challenges. The book gradually builds an inspiring message about overcoming difficulties while holding onto faith, love, and determination. Its emotional sincerity and classic storytelling approach make Triumph an engaging read for anyone who appreciates inspirational fiction with heart.",
-              name: "Chicago Sun-Times",
+                "Dennis Mather delivers a compelling approach to theological writing by blending biblical interpretation with modern-day relevance. His books encourage readers to examine spiritual themes with curiosity and reflection while maintaining a grounded and conversational style. The topics explored are presented with clarity and purpose, making them approachable even for readers who are newer to theological study. Overall, his work offers an insightful reading experience for those interested in prophecy, Christian teachings, and deeper spiritual understanding. ",
+              name: "John Paul",
              
             },
             {
               quote:
-                "Triumph by Judy Wilson delivers a powerful and heartfelt reading experience centered on perseverance, family bonds, and emotional healing. The story captures both the struggles and quiet victories of everyday life, making the characters feel genuine and relatable. The vintage tone and reflective storytelling style give the book a timeless quality that draws readers into its emotional world. Readers who enjoy uplifting stories with meaningful life lessons and strong emotional depth will likely find Triumph both moving and memorable.",
-              name: "Sacramento Bee",
+                "Dennis Mather’s works present thoughtful explorations of theology, prophecy, and spiritual reflection in a way that feels both accessible and engaging. His writing combines biblical discussion with practical insight, encouraging readers to think deeply about faith, the future, and the meaning behind scripture. What stands out most is the clear passion behind the material, making complex theological topics easier for readers to follow and reflect upon. Readers interested in spiritual study and faith-centered discussions will likely appreciate the depth and sincerity found throughout his books",
+              name: "Mark Robin",
              
             },
           ].map((review, index) => (
