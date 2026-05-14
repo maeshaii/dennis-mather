@@ -56,7 +56,7 @@ const FeaturedWorks = () => {
 
   return (
     <section
-      id="books"
+      id="featured-works"
       className="py-24 bg-[#fffafa ] relative overflow-hidden"
     >
 

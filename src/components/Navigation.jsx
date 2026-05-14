@@ -8,36 +8,37 @@ const Navigation = () => {
   const navItems = [
     { name: "HOME", href: "#home", id: "home" },
     { name: "BOOKS", href: "#books", id: "books" },
+    { name: "FEATURED WORKS", href: "#featured-works", id: "featured-works" },
     { name: "ABOUT", href: "#about", id: "about" },
     { name: "REVIEWS", href: "#reviews", id: "reviews" },
     { name: "CONTACT", href: "#contact", id: "contact" },
-  ];
+  ];  
 
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY + 150;
-      const bottomReached =
-        window.innerHeight + window.scrollY >= document.body.offsetHeight - 10;
+  const handleScroll = () => {
+    const scrollPosition = window.scrollY + 120;
 
-      if (bottomReached) {
-        setActiveTab("contact");
-        return;
+    const bottomReached =
+      window.innerHeight + window.scrollY >=
+      document.body.offsetHeight - 10;
+
+    if (bottomReached) {
+      setActiveTab("contact");
+      return;
+    }
+
+    let currentSection = "home";
+
+    navItems.forEach((item) => {
+      const element = document.getElementById(item.id);
+
+      if (element && scrollPosition >= element.offsetTop) {
+        currentSection = item.id;
       }
+    });
 
-      for (const item of navItems) {
-        const element = document.getElementById(item.id);
-
-        if (element) {
-          const offsetTop = element.offsetTop;
-          const offsetBottom = offsetTop + element.offsetHeight;
-
-          if (scrollPosition >= offsetTop && scrollPosition < offsetBottom) {
-            setActiveTab(item.id);
-            break;
-          }
-        }
-      }
-    };
+    setActiveTab(currentSection);
+  };
 
     window.addEventListener("scroll", handleScroll);
     handleScroll();
@@ -47,11 +48,19 @@ const Navigation = () => {
 
   const handleClick = (e, href, id) => {
     e.preventDefault();
+
     setActiveTab(id);
 
     const element = document.querySelector(href);
+
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      const navHeight = 90;
+      const elementPosition = element.offsetTop - navHeight;
+
+      window.scrollTo({
+        top: elementPosition,
+        behavior: "smooth",
+      });
     }
 
     setIsMenuOpen(false);
@@ -68,18 +77,22 @@ const Navigation = () => {
           onClick={(e) => handleClick(e, "#home", "home")}
           className="flex items-center gap-5"
         >
-        <div className="relative w-[88px] h-[100px] bg-[#F5E6D3] shadow-lg flex items-center justify-center -mb-7">
-          <div className="relative w-[60px] h-[60px] mx-auto">
-            <span className="absolute inset-0 flex items-center justify-center text-[#7b6337] font-serif text-5xl font-bold leading-none z-10 translate-x-[-6px] translate-y-[-6px]">
+        <div className="relative w-[90px] h-[100px] bg-[#F5E6D3] shadow-lg flex items-center justify-center -mb-7">
+          
+          <div className="relative w-[60px] h-[60px] flex items-center justify-center">
+            
+            <span className="absolute text-[#7b6337] font-serif text-5xl font-bold leading-none z-10 -translate-x-[8px] -translate-y-[10px]">
               D
             </span>
 
-            <span className="absolute inset-0 flex items-center justify-center text-[#7b6337] font-serif text-5xl font-bold leading-none opacity-90 translate-x-[8px] translate-y-[8px]">
+            <span className="absolute text-[#7b6337] font-serif text-5xl font-bold leading-none opacity-90 translate-x-[10px] translate-y-[8px]">
               M
             </span>
+
           </div>
 
-          <div className="absolute bottom-[-18px] left-0 w-0 h-0 border-l-[44px] border-r-[44px] border-t-[18px] border-l-transparent border-r-transparent border-t-[#F5E6D3]"></div>
+          <div className="absolute bottom-[-18px] left-0 w-0 h-0 border-l-[45px] border-r-[45px] border-t-[18px] border-l-transparent border-r-transparent border-t-[#F5E6D3]"></div>
+
         </div>
 
           <div className="hidden sm:block">

@@ -10,7 +10,7 @@ import {
   FaComments,
 } from "react-icons/fa";
 
-import wowVideo from "../assets/wow.mp4";
+import authorImage from "../assets/author2.webp";
 
 import worldBook from "../assets/winw1.webp";
 import compendiumBook from "../assets/mtc3.webp";
@@ -114,24 +114,19 @@ const Hero = () => {
               </div>
             </div>
 
-            <div className="relative flex justify-center">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl max-w-md mx-auto bg-gradient-to-br from-[#05070d] via-[#061a2b] to-[#0b2a4a] p-6 border-2 border-[#b8860b]">
-                <video
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  className="w-full max-w-sm md:max-w-md h-auto object-cover rounded-2xl shadow-xl"
-                  style={{ maxHeight: "550px" }}
-                >
-                  <source src={wowVideo} type="video/mp4" />
-                </video>
+        <div className="relative flex justify-center">
 
-                <div className="absolute -bottom-4 -right-4 bg-[#b8860b] text-white rounded-full p-3 shadow-lg">
-                  <FaBook size={24} />
-                </div>
-              </div>
+            <img
+              src={authorImage}
+              alt="Dennis Mather"
+              className="w-full max-w-8xl md:max-w-10xl h-auto object-cover rounded-3xl shadow-2xl"
+              style={{ maxHeight: "1050px" }}
+            />
+
+            <div className="absolute -bottom-5 -right-5 bg-[#b8860b] text-white rounded-full p- shadow-xl">
             </div>
+
+        </div>
           </div>
         </div>
       </section>
