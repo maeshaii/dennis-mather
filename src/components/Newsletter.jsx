@@ -42,20 +42,17 @@ const Newsletter = () => {
 
           {[
             {
-              quote:
-                "The writings of Dennis Mather provide a reflective and intellectually engaging perspective on biblical themes and theological ideas. His ability to connect scripture with broader life questions gives his books a meaningful and thought-provoking quality. Readers may appreciate the calm, educational tone and the way the material encourages personal reflection without feeling overly academic or difficult to follow. For those interested in faith-based literature and theological exploration, Dennis Mather’s books offer a unique and inspiring reading experience.",
-              name: "Mendoza",
+              quote:"This is one of the few books on Christianity that I keep handy at all times to quote from. The events listed and the information about Christ provided by the author can be narrated and spread as a message with your eyes closed.",
+              name: "Tara Preston",
              
             },
             {
-              quote:
-                "Dennis Mather delivers a compelling approach to theological writing by blending biblical interpretation with modern-day relevance. His books encourage readers to examine spiritual themes with curiosity and reflection while maintaining a grounded and conversational style. The topics explored are presented with clarity and purpose, making them approachable even for readers who are newer to theological study. Overall, his work offers an insightful reading experience for those interested in prophecy, Christian teachings, and deeper spiritual understanding. ",
-              name: "John Paul",
+              quote:"I am a big fan of Dennis Mather. Both his previous books in the series were quite enlightening and thought provoking and this one does equal justice to the author’s knowledge and beliefs.",
+              name: "Heidy Jennings",
              
             },
             {
-              quote:
-                "Dennis Mather’s works present thoughtful explorations of theology, prophecy, and spiritual reflection in a way that feels both accessible and engaging. His writing combines biblical discussion with practical insight, encouraging readers to think deeply about faith, the future, and the meaning behind scripture. What stands out most is the clear passion behind the material, making complex theological topics easier for readers to follow and reflect upon. Readers interested in spiritual study and faith-centered discussions will likely appreciate the depth and sincerity found throughout his books",
+              quote:"A wonderful compilation of matter, teachings, quotes, etc to encourage and comfort Christians to continue on the right path for a place promised to them by God.",
               name: "Mark Robin",
              
             },
