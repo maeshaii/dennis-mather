@@ -93,8 +93,25 @@ const Footer = () => {
               </div>
 
             </div>
+            
           </div>
-
+          <div className="mt-6 flex justify-center">
+            <a
+              href="https://buy.stripe.com/7sY5kEdVm6vNfRU8Ey2kw07"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+                bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-500
+                text-black text-2xl font-bold py-10 px-28 rounded-full
+                shadow-2xl
+                transform transition-all duration-300
+                hover:scale-105 hover:shadow-yellow-400/50
+                animate-pulse
+              "
+            >
+              Launch & Go-Live Portal
+            </a>
+          </div>
           {/* SOCIALS */}
           <div className="flex gap-5">
 
@@ -203,6 +220,7 @@ const Footer = () => {
           </p>
 
         </div>
+
       </div>
 
       <style>{`
