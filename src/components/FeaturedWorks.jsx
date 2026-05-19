@@ -27,7 +27,7 @@ const books = [
   {
     title: "Eschatology Unlimited",
     subtitle: "Encouragement for Christians awaiting Christ’s return.",
-    image: eschatologyBook,
+    image: eschatologyBook, 
   },
 
   {
