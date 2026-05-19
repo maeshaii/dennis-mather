@@ -14,6 +14,7 @@ import {
    
 } from "react-icons/fa";
 
+import authorImage from "../assets/dn.png";
 const About = () => {
   return (
     <section className="py-24 bg-[#F5E6D3] relative overflow-hidden"
@@ -54,7 +55,7 @@ const About = () => {
 
               <h3 className="text-2xl font-bold text-white mb-3">
                 His Background
-              </h3>
+              </h3> 
 
               <p className="text-[#F5E6D3]/80 leading-relaxed text-sm">
               Dennis Mather’s work is rooted in biblical prophecy, Christian theology, and the study of the end times, 
@@ -65,6 +66,8 @@ const About = () => {
             {/* RIGHT SIDE */}
             <div className="lg:col-span-2 p-8 space-y-6">
               <div>
+                
+                
                 <h4 className="text-xl font-semibold text-[#b8860b] mb-3">
                   Christian Author & Theologian
                 </h4>

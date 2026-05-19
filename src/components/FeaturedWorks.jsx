@@ -31,12 +31,12 @@ const books = [
   {
     title: "Biblical Prophecy",
     subtitle: "A focused study of prophecy and future biblical events.",
-    image: compendiumBook,
+    image: coverImage,
   },
   {
     title: "Mather’s Theological Compendium",
     subtitle: "A theological work covering signs of Christ’s return.",
-    image: coverImage,
+    image: compendiumBook,
   },
 ];
 

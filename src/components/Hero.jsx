@@ -11,6 +11,7 @@ import {
 } from "react-icons/fa";
 
 import authorImage from "../assets/dn.png";
+import bg from "../assets/author2.webp";
 
 import worldBook from "../assets/winw1.webp";
 import compendiumBook from "../assets/mtc3.webp";
@@ -68,6 +69,7 @@ const Hero = () => {
       <section
         id="home"
         className="min-h-screen flex items-center pt-20 relative overflow-hidden bg-[#fffafa ]"
+        
       >
 
         <div className="container-custom mx-auto relative z-10 px-6">
@@ -89,9 +91,7 @@ const Hero = () => {
               </h1>
 
               <p className="text-lg text-[#5c3d00]/80 mb-8 leading-relaxed">
-                Dennis Mather attended Faith Baptist Bible College and Theological Seminary in Ankeny, Iowa. 
-                He lives in Des Moines, Iowa where he attends Grace Church. When he retired he went back to his 
-                favorite church, Grace Church,  to participate in the community groups there which are awesome.
+Dennis Mather is a Christian author and theologian known for his work on eschatology and biblical prophecy. A graduate of Faith Baptist Bible College and Theological Seminary in Ankeny, Iowa, Dennis currently resides in Des Moines. Following his retirement, he returned to his favorite congregation, Grace Church, where he now happily participates in their wonderful community groups.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
