@@ -3,15 +3,16 @@ import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
 
 import worldBook from "../assets/winw1.webp";
 import compendiumBook from "../assets/mtc3.webp";
+import compendium from "../assets/mtc.png";
 import eschatologyBook from "../assets/eu.webp";
 import divineBook from "../assets/mtc-2.webp";
-import coverImage from "../assets/bip-pro.webp";
+import coverImage from "../assets/bip.webp";
 
 const books = [
   {
-    title: "What in the World Is Going to Happen",
-    subtitle: "A fictional account beginning one second after the Rapture.",
-    image: worldBook,
+    title: "Biblical Prophecy",
+    subtitle: "A focused study of prophecy and future biblical events.",
+    image: coverImage,
   },
   {
     title: "Mather’s Theological Compendium III",
@@ -19,25 +20,28 @@ const books = [
     image: compendiumBook,
   },
   {
-    title: "Eschatology Unlimited",
-    subtitle: "Encouragement for Christians awaiting Christ’s return.",
-    image: eschatologyBook,
-  },
-  {
     title: "The Divine Plan: Mather’s Theological Compendium II",
     subtitle: "Exploring God’s sovereignty throughout history.",
     image: divineBook,
   },
   {
-    title: "Biblical Prophecy",
-    subtitle: "A focused study of prophecy and future biblical events.",
-    image: coverImage,
+    title: "Eschatology Unlimited",
+    subtitle: "Encouragement for Christians awaiting Christ’s return.",
+    image: eschatologyBook,
   },
+
   {
+    title: "What in the World Is Going to Happen",
+    subtitle: "A fictional account beginning one second after the Rapture.",
+    image: worldBook,
+  },
+    {
     title: "Mather’s Theological Compendium",
     subtitle: "A theological work covering signs of Christ’s return.",
-    image: compendiumBook,
+    image: compendium,
   },
+
+
 ];
 
 const FeaturedWorks = () => {

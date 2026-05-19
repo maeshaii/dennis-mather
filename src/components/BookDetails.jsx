@@ -8,7 +8,7 @@ import {
   FaComments,
 } from "react-icons/fa";
 import { authorData } from "../data/authorData";
-import coverImage from "../assets/bip-pro.webp";
+import coverImage from "../assets/bip.webp";
 
 const BookDetails = () => {
   const book = authorData.book;
