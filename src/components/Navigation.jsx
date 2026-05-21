@@ -97,7 +97,7 @@ const Navigation = () => {
 
           <div className="hidden sm:block">
             <h1 className="text-[#F5E6D3] text-lg md:text-xl font-bold tracking-wide">
-              DENNIS MATHER, TH.D.
+              DENNIS MATHER
             </h1>
             <p className="text-[#F5E6D3]/80 text-sm">
               - Author &amp; Theologian
